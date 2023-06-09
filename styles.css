@@ -27,8 +27,46 @@ a{
     display: flex;
     align-items: center;
 }
+h1{
+    padding-top: 5px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+main{
+    padding: 5px 20px;
+}
+
+.conteiner{
+    display: inline;
+    justify-content: space-between;
+    
+}
+
+main p{
+    margin: 10px 0px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.epigrafe{
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+.content2 a div{
+    color: black;
+}
+
 footer{
-    background-color: pink;
     box-shadow: 0 2px 10px black;
 }
 
@@ -50,9 +88,23 @@ footer{
 
 
 @media (max-width:600px) {
+    .cartel{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        padding-top: 10px;
+    }
     .boton{
         background-color: transparent;
         border-style: none;
+    }
+    .mainImg{
+        width: 100%;
+    }
+    .masImg{
+        height: 70px;
+        width: 100px;
     }
     .topmenu{
         display: none;
@@ -66,9 +118,21 @@ footer{
         width: auto;
     }
 
-    body{
-        background-color: blueviolet;
+    .content2{
+        display: flex;
+        align-items:baseline;
+        font-size: 10px;
+        border-top: 1px solid gray;
     }
+    .content2 a{
+        padding: 5px 3px;
+    }
+    
+    .masImg{
+        width:100%;
+
+    }
+
 }
 
 @media (min-width:600px) {
@@ -94,6 +158,39 @@ footer{
         display: none;
     }
 
+    .banner{
+        display: none;
+    }
+
+    .conteiner{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content1{
+        width: 20%;
+    }
+    .mainContent{
+        width: 55%;
+    }
+    .content2{
+        width: 20%;
+    }
+    .content2 a div{
+        padding-bottom: 10px;
+    }
+
+    .mainImg{
+        width: 100%;
+    }
+    .masImg{
+        width: 100%;
+    }
+    .cartel{
+        width: 100%;
+    }
+
     .downnav{
         display: flex;
         justify-content:space-between;
@@ -103,10 +200,5 @@ footer{
         display: inline;
         margin: 10px;
     }
-
-    body{
-        background-color: green;
-    }
-
 
 }
