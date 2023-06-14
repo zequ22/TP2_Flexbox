@@ -1,3 +1,16 @@
+strong{
+    font-weight: 600;
+}
+
+header{
+    background-color: cadetblue;
+}
+footer{
+    background-color: cadetblue;
+}
+body{
+    background-color: snow;
+}
 .iconos{
     height: 30px;
     width: 30px;
@@ -26,6 +39,9 @@ a{
     opacity: 0.5;
     display: flex;
     align-items: center;
+}
+.fechapublic{
+    color: gray;
 }
 h1{
     padding-top: 5px;
@@ -61,7 +77,9 @@ main p{
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid gray;
 }
-
+.content2 a img{
+    border: 1px solid gray;
+}
 .content2 a div{
     color: black;
 }
@@ -94,6 +112,7 @@ footer{
     .banner{
         width: 100%;
         padding-top: 10px;
+        border: 2px solid gray;
     }
     .boton{
         background-color: transparent;
@@ -101,6 +120,7 @@ footer{
     }
     .mainImg{
         width: 100%;
+        border: 1px solid gray;
     }
     .masImg{
         height: 70px;
@@ -173,6 +193,8 @@ footer{
     }
     .mainContent{
         width: 55%;
+        padding: 10px;
+        border: 1px dotted gray;
     }
     .content2{
         width: 20%;
@@ -183,12 +205,14 @@ footer{
 
     .mainImg{
         width: 100%;
+        border: 1px solid gray;
     }
     .masImg{
         width: 100%;
     }
     .cartel{
         width: 100%;
+        border: 2px solid gray;
     }
 
     .downnav{
