@@ -261,24 +261,26 @@ footer{
         display: inline;
         margin: 10px;
     }
-
-    .formu{
-        background: cadetblue;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
     
-    .formu h4{
-        font-size: 24px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 5px;
+    .formu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
     }
-    
-    .campos{
+      
+    .formu h4 {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+      
+    .formu .btnRegistro {
+        grid-column: 1 / span 2;
+        justify-self: center;
         width: 30%;
-        flex-basis: calc(50% - 10px); /* Calcula el ancho para dos columnas con un espacio de 10px entre ellas */
-  margin-bottom: 10px;
     }
-
+     
+    .campos{
+        width: 95%;
+    }
 }
