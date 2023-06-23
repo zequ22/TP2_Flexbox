@@ -8,6 +8,9 @@ header{
 footer{
     background-color: cadetblue;
 }
+#subs{
+    color:darkgoldenrod;
+}
 body{
     background-color: snow;
 }
@@ -103,7 +106,41 @@ footer{
     width: 85px;
 }
 
+.formu{
+    margin: 15px;
+    padding: 5px;
+    background: cadetblue;
+    border-radius: 4px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.formu h4{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.campos{
+    width: 75%;
+    background: cadetblue;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.btnRegistro{
+    width: 50%;
+    background-color: darkgoldenrod;
+    box-shadow: 0px 2px 10px black;
+    font-family: Arial, Helvetica, sans-serif
+}
 
 @media (max-width:600px) {
     .cartel{
@@ -223,6 +260,25 @@ footer{
     .downmenu li{
         display: inline;
         margin: 10px;
+    }
+
+    .formu{
+        background: cadetblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .formu h4{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+    }
+    
+    .campos{
+        width: 30%;
+        flex-basis: calc(50% - 10px); /* Calcula el ancho para dos columnas con un espacio de 10px entre ellas */
+  margin-bottom: 10px;
     }
 
 }
