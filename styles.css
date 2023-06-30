@@ -126,6 +126,13 @@ footer{
     padding: 5px;
 }
 
+.valAlert{
+    color: red;
+    font-size: x-small;
+    visibility: hidden;
+	margin: 1px;
+}
+
 .campos{
     width: 75%;
     background: cadetblue;
@@ -142,6 +149,18 @@ footer{
     background-color: darkgoldenrod;
     box-shadow: 0px 2px 10px black;
     font-family: Arial, Helvetica, sans-serif
+}
+
+.col1, .col2, .btn{
+	display: flex;
+	flex-direction: column;
+}
+
+ .columnas{
+    width: 90%;
+ }
+.campos{
+    width: 95%;
 }
 
 @media (max-width:600px) {
@@ -265,14 +284,25 @@ footer{
     }
     
     .formu {
+		display: flex;
+		flex-direction: column;
+        /*
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2px;
         align-items: center;
         padding-left: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 10px;*/
     }
-      
+    .columnas{
+        display: flex;
+        width: 90%;
+    }
+    .col1, .col2{
+		display: flex;
+		flex-grow: 5;
+	}
+
     .formu h4 {
         grid-column: 1 / span 2;
         text-align: center;

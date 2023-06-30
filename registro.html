@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <script src="validaciones.js"></script>
 </head>
 <body>
     <header class="topheader">
@@ -24,19 +23,35 @@
 
     <main>
         <form action="" class="formu">
+            <h4 id="hi">¡Hola!</h4>
             <h4>Formulario de Registro</h4>
-                <input class="campos" type="text" name="nombreC" id="nombreC" placeholder="Nombre Completo">
-                <input class="campos" type="email" name="correoE" id="correoE" placeholder="Correo Electronico">
-                <input class="campos" type="password" name="pass1" id="pass1" placeholder="Contraseña">
-                <input class="campos" type="password" name="pass2" id="pass2" placeholder="Repita la Contraseña">
-                <input class="campos" type="number" name="edad" id="edad" placeholder="Edad">
-                <input class="campos" type="tel" name="tel" id="tel" placeholder="Telefono/Celular">
-                <input class="campos" type="text" name="direcc" id="direcc" placeholder="Direccion">
-                <input class="campos" type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
-                <input class="campos" type="number" name="codpost" id="codpost" placeholder="Codigo Postal">
-                <input class="campos" type="number" name="DNI" id="DNI" placeholder="DNI">
-
-                <input class="btnRegistro" type="submit" value="Registrar">
+            <div class="columnas">
+                <div class="col1">
+                    <input class="campos" type="text" name="nombreC" id="nombreC" placeholder="Nombre Completo">
+                    <p class="valAlert" id="nombreAlert">Debe tener más de 6 letras y al menos un espacio entre medio.</p>
+                    <input class="campos" type="email" name="correoE" id="correoE" placeholder="Correo Electronico">
+                    <p class="valAlert" id="emailAlert">Debe tener un formato de email válido.</p>
+                    <input class="campos" type="password" name="pass1" id="pass1" placeholder="Contraseña">
+                    <p class="valAlert" id="contraAlert">Al menos 8 caracteres alfanuméricos.</p>
+                    <input class="campos" type="password" name="pass2" id="pass2" placeholder="Repita la Contraseña">
+                    <p class="valAlert" id="recontraAlert">Las contraseñas no coinciden.</p>
+                    <input class="campos" type="number" name="edad" id="edad" placeholder="Edad">
+                    <p class="valAlert" id="edadAlert">Debe ser mayor de edad.</p>
+                </div>
+                <div class="col2">
+                    <input class="campos" type="tel" name="tel" id="tel" placeholder="Telefono/Celular">
+                    <p class="valAlert" id="telAlert"> Número de al menos 7 dígitos, sin espacios ni guiones.</p>
+                    <input class="campos" type="text" name="direcc" id="direcc" placeholder="Direccion">
+                    <p class="valAlert" id="dirAlert">Al menos 5 caracteres alfanuméricos.</p>
+                    <input class="campos" type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                    <p class="valAlert" id="ciudadAlert">Al menos 3 caracteres.</p>
+                    <input class="campos" type="number" name="codpost" id="codpost" placeholder="Codigo Postal">
+                    <p class="valAlert" id="codPostAlert">Al menos 3 caracteres.</p>
+                    <input class="campos" type="number" name="DNI" id="DNI" placeholder="DNI">
+                    <p class="valAlert" id="dniAlert">Número de 7 u 8 dígitos.</p>
+                </div>
+            </div>
+            <input class="btnRegistro" id="btnEnviar" type="submit" value="Registrar">
         </form>
     </main>
 
@@ -54,5 +69,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="validaciones.js"></script>
 </body>
 </html>
